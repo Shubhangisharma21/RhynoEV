@@ -1,0 +1,247 @@
+/* General styles */
+.app-container {
+  position: relative;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(69%);
+  z-index: -1;
+}
+
+/* Header section */
+header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border: 2px solid #F9ED32;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.company-logo {
+  width: 165px; /* Increase logo size by 1.65 times */
+  height: auto;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-align header content */
+  flex-direction: column; /* Align items vertically */
+}
+
+.company-text {
+  text-align: center;
+}
+
+.company-name {
+  font-size: 3em; /* Increase text size by 1.5 times */
+  margin: 0;
+  font-weight: bold; /* Make text bold */
+}
+
+.motto {
+  font-size: 1.5em; /* Increase motto size */
+  margin: 0;
+  font-weight: bold; /* Make text bold */
+}
+
+/* Menu links */
+.menu-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Center-align menu links */
+  margin-top: 10px; /* Add some space between the company text and menu links */
+}
+
+.menu-links a {
+  color: #F9ED32;
+  text-decoration: none;
+}
+
+/* Products section */
+.products-section {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.product-comparison {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-box {
+  background-color: rgba(55, 55, 55, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center; /* Center-align text inside product box */
+}
+
+.product-image {
+  width: 100%; /* Ensure the image fills the box */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 250px; /* Increase maximum width */
+  max-height: 200px; /* Increase maximum height */
+  object-fit: contain; /* Ensure the image is fully visible */
+  margin-top: 10px;
+}
+
+/* USP section */
+.usp-section {
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: rgba(55, 55, 55, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.usp-section h2 {
+  font-size: 2em;
+  color: #F9ED32;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline double; /* Double underline for section title */
+}
+
+.usp-section ol {
+  list-style: decimal;
+  padding: 0;
+  color: #FFF225;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* About Us section */
+.about-us {
+  background-color: rgba(55, 55, 55, 0.8);
+  padding: 20px;
+  border: 2px solid #F9ED32;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-decoration: underline double; /* Double underline for section title */
+}
+
+/* Products section titles */
+.products-section h2,
+.product-comparison h3 {
+  font-size: 1.5em;
+  text-decoration: underline double; /* Double underline for section titles */
+}
+
+/* Product names */
+.product-comparison h3 {
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: underline double; /* Double underline for product names */
+}
+
+/* Contact Us section */
+.contact-us {
+  background-color: rgba(55, 55, 55, 0.8);
+  padding: 20px;
+  border: 2px solid #F9ED32;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact-us h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-decoration: underline double; /* Double underline for section title */
+}
+
+/* Footer section */
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid #F9ED32;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #F9ED32;
+  text-decoration: none;
+}
+
+/* Carousel styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-control {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-comparison {
+    flex-direction: column;
+  }
+
+  .product-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Project text styling */
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: #F9ED32; /* Adjust color as needed */
+  text-align: center;
+}
